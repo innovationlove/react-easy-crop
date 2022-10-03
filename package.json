@@ -1,6 +1,6 @@
 {
   "name": "react-easy-crop",
-  "version": "4.5.1",
+  "version": "4.5.7",
   "description": "A React component to crop images/videos with easy interactions",
   "homepage": "https://ValentinH.github.io/react-easy-crop/",
   "keywords": [
@@ -14,7 +14,17 @@
     "dist",
     "LICENSE",
     "README.md",
-    "package.json"
+    "package.json",
+    ".babelrc",
+    ".eslintignore",
+    ".eslintrc.json",
+    ".prettierrc",
+    "auto.config.ts",
+    "bili.config.ts",
+    "scripts",
+    "src",
+    "tsconfig.json",
+    "webpack.config.js"
   ],
   "repository": {
     "type": "git",
