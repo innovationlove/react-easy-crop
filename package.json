@@ -40,7 +40,7 @@
     "build:copy-files": "babel-node ./scripts/copy-build-files.js",
     "precommit": "lint-staged",
     "format": "prettier --write src/**/*.ts* docs/src/**/*.{js,css}",
-    "prepare": "npm run build"
+    "prepare": "yarn-or-npm build"
   },
   "peerDependencies": {
     "react": ">=16.4.0",
