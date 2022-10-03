@@ -9,6 +9,13 @@
     "cropper",
     "image crop"
   ],
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ValentinH/react-easy-crop"
