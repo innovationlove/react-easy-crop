@@ -380,6 +380,7 @@ class Cropper extends React.Component<CropperProps, State> {
 
   onMouseDown = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault()
+    e.stopPropagation()
     this.currentDoc.addEventListener('mousemove', this.onMouseMove)
     this.currentDoc.addEventListener('mouseup', this.onDragStopped)
     this.onDragStart(Cropper.getMousePoint(e))
