@@ -39,7 +39,8 @@
     "prebuild": "rimraf dist",
     "build:copy-files": "babel-node ./scripts/copy-build-files.js",
     "precommit": "lint-staged",
-    "format": "prettier --write src/**/*.ts* docs/src/**/*.{js,css}"
+    "format": "prettier --write src/**/*.ts* docs/src/**/*.{js,css}",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": ">=16.4.0",
