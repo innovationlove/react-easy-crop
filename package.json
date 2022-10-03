@@ -1,6 +1,6 @@
 {
   "name": "react-easy-crop",
-  "version": "4.5.7",
+  "version": "4.5.18",
   "description": "A React component to crop images/videos with easy interactions",
   "homepage": "https://ValentinH.github.io/react-easy-crop/",
   "keywords": [
@@ -11,20 +11,7 @@
   ],
   "main": "dist/index.js",
   "files": [
-    "dist",
-    "LICENSE",
-    "README.md",
-    "package.json",
-    ".babelrc",
-    ".eslintignore",
-    ".eslintrc.json",
-    ".prettierrc",
-    "auto.config.ts",
-    "bili.config.ts",
-    "scripts",
-    "src",
-    "tsconfig.json",
-    "webpack.config.js"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -56,9 +43,7 @@
     "prebuild": "rimraf dist",
     "build:copy-files": "babel-node ./scripts/copy-build-files.js",
     "precommit": "lint-staged",
-    "format": "prettier --write src/**/*.ts* docs/src/**/*.{js,css}",
-    "prepare": "yarn build",
-    "install": "yarn build"
+    "format": "prettier --write src/**/*.ts* docs/src/**/*.{js,css}"
   },
   "peerDependencies": {
     "react": ">=16.4.0",
