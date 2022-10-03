@@ -386,7 +386,10 @@ class Cropper extends React.Component<CropperProps, State> {
     this.onDragStart(Cropper.getMousePoint(e))
   }
 
-  onMouseMove = (e: MouseEvent) => this.onDrag(Cropper.getMousePoint(e))
+  onMouseMove = (e: MouseEvent) => {
+    e.stopPropagation()
+    this.onDrag(Cropper.getMousePoint(e))
+  }
 
   onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     if (this.props.onTouchRequest && !this.props.onTouchRequest(e)) {
