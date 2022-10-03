@@ -445,7 +445,7 @@ class Cropper extends React.Component<CropperProps, State> {
     })
   }
 
-  onDragStopped = (e: MouseEvent) => {
+  onDragStopped = (e: MouseEvent | React.TouchEvent<HTMLDivElement>) => {
     e.stopPropagation()
 
     this.cleanEvents()
